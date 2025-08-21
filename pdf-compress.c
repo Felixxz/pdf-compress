@@ -97,6 +97,7 @@ int main(int argc, char **argv) {
 
 	GtkWidget *window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
 		gtk_window_set_title(GTK_WINDOW(window), "PDF compress");
+		gtk_window_set_icon_name(GTK_WINDOW(window), "pdf-compress");
 		gtk_window_set_default_size(GTK_WINDOW(window), 650, -1);
 		g_signal_connect(window, "destroy", G_CALLBACK(gtk_main_quit), NULL);
 
@@ -128,9 +129,9 @@ int main(int argc, char **argv) {
 			gtk_box_pack_start(GTK_BOX(vbox), gtk_label_new(""), FALSE, FALSE, 0);
 
 			combo = gtk_combo_box_text_new ();
-				gtk_combo_box_text_append (GTK_COMBO_BOX_TEXT (combo), "screen", "Низкое качество - 72 dpi)");
+				gtk_combo_box_text_append (GTK_COMBO_BOX_TEXT (combo), "screen", "Низкое качество - 72 dpi");
 				gtk_combo_box_text_append (GTK_COMBO_BOX_TEXT (combo), "ebook", "Среднее качество - 150 dpi");
-				gtk_combo_box_text_append (GTK_COMBO_BOX_TEXT (combo), "prepress", "Высокое качество - 300 dpi)");
+				gtk_combo_box_text_append (GTK_COMBO_BOX_TEXT (combo), "prepress", "Высокое качество - 300 dpi");
 				gtk_combo_box_set_active (GTK_COMBO_BOX (combo), 0);
 			gtk_container_add (GTK_CONTAINER (vbox), combo);
 
