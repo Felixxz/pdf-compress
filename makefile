@@ -15,3 +15,4 @@ install: all
 		mkdir -p /usr/share/icons/hicolor/$(i)x$(i)/apps/; \
 		install data/icons/$$i.png /usr/share/icons/hicolor/$${i}x$${i}/apps/$(APP).png -m 644; \
 	done
+	install data/pdf-compress.desktop /usr/share/applications/ -m 644

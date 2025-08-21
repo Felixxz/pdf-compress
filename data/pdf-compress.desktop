@@ -4,7 +4,7 @@ GenericName=Сжатие PDF
 Comment=Выполняет сжатие PDF через графический интерфейс
 Exec=pdf-compress
 # Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#Icon=Pdf-compress
+Icon=pdf-compress
 Terminal=false
 Type=Application
 StartupNotify=true
